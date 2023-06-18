@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post Page</title>
+  <link rel="stylesheet" type="text/css" href="../styles/post.css">
+  <link rel="stylesheet" type="text/css" href="../styles/common.css">
+</head>
+<body>
+
+    <header>
+        <div>
+          <div class="logo">ScriBBler</div>
+          <div class="subheading">Explore, Imagine, Create</div>
+        </div>
+        <div>
+          <button class="sign-in-btn">Sign In</button>
+          <button class="sign-up-btn">Sign Up</button>
+        </div>
+      </header>
+
+  <!-- Post Content -->
+  <div class="post-container">
+    <h1 class="post-title">Post Title</h1>
+    <div class="post-author">Author Name</div>
+    <button class="edit-button" onclick="enableEditMode()"><i class="fas fa-edit"></i>Edit</button>
+    <div class="post-text" contenteditable="false">
+      <!-- Post text content here -->
+    </div>
+    <div class="like-section">
+      <button class="like-button" onclick="toggleLike()">
+        <i class="fas fa-thumbs-up"></i>
+        <span>Like</span>
+      </button>
+      <span class="like-count">Be the first one to like this!</span>
+    </div>
+    <div class="comment-section">
+      <textarea type="text" class="comment-input" placeholder="Leave a comment..."></textarea>
+      <button class="comment-button" onclick="addComment()">Comment</button>
+      <div class="all-comments">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+  <script src="../scripts/post.js"></script>
+  <script src="../scripts/common.js"></script>
+</body>
+</html>
