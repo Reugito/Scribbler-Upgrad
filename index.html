@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+  <link href="styles/common.css" rel="stylesheet">
+  <script src="scripts/common.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+          <div class="logo">ScriBBler</div>
+          <div class="subheading">Explore, Imagine, Create</div>
+        </div>
+        <div>
+          <button class="sign-in-btn">Sign In</button>
+          <button class="sign-up-btn">Sign Up</button>
+        </div>
+      </header>
+
+  <div class="buttons-section">
+    <button class="all-posts-btn">All Posts</button>
+    <button class="create-post-btn">Create Post</button>
+  </div>
+
+  <!-- Modals -->
+  <div id="sign-up-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Get Started</h2>
+      <input type="text" placeholder="Enter your name">
+      <input type="text" placeholder="Enter your username">
+      <input type="password" placeholder="Enter your password">
+      <input type="password" placeholder="Re-enter your password">
+      <button class="green-btn">Sign Up</button>
+    </div>
+  </div>
+
+  <div id="sign-in-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Welcome Back!</h2>
+      <input type="text" placeholder="Enter your username">
+      <input type="password" placeholder="Enter your password">
+      <button class="green-btn">Sign In</button>
+      <p class="not-member">Not a member? <a href="#" id="show-sign-up">Sign Up</a></p>
+    </div>
+  </div>
+
+  <div id="create-post-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="modal-title">Pen Your Post</h2>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" placeholder="Enter title of your post">
+      <label for="post-contents">Contents</label>
+      <textarea id="post-contents" placeholder="Enter the contents of your post"></textarea>
+      <button class="green-btn">Create</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
