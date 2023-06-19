@@ -1,11 +1,14 @@
 /* Header */
 
 body {
-  background-image: url('../images/background.jpg');
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/background.jpg') !important;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   margin: 0;
   padding: 0;
+
 }
 
 header {
@@ -55,8 +58,8 @@ header>div:first-child {
 .sign-in-btn:active,
 .sign-up-btn:active,
 .all-posts-btn:active,
-.create-post-btn:active,
-.green-btn:active {
+.create-post-btn:active
+{
   scale: 0.97;
   transition: .2s ease;
 }
@@ -73,6 +76,7 @@ header>div:first-child {
 .create-post-btn {
   background-color: yellow;
   color: black;
+  font-size: medium;
   font-weight: 600;
   padding: 12px 24px;
   border: none;
@@ -96,25 +100,52 @@ header>div:first-child {
 /* for sign in and sign up modal */
 #sign-up-modal .modal-content,
 #sign-in-modal .modal-content {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 2em;
-  width: 30%;
+  width: 23em;
+  font-family: sans-serif;
 }
 
 /* Create post modal conntent */
 #create-post-modal .modal-content {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 1em;
-  width: 60%;
-  height: 50%;
+  width: 65em;
+  height: max-content;
+  font-family: sans-serif;  
+}
+#create-post-modal .green-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+  width: 20%;
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-block:10px ;
+}
+#create-post-modal .modal-content input,
+#create-post-modal .modal-content textarea{
+  background: rgba(149, 149, 149, 0.2);
+  outline: none;
+  border:none;
+  width: 98%;
 }
 
 
@@ -122,17 +153,17 @@ header>div:first-child {
   color: #aaa;
   float: right;
   font-size: 26px;
-  font-weight: bolder;
   cursor: pointer;
 }
 
 .modal-title {
   font-size: 24px;
-  margin-block: 16px;
+  margin-block: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   padding: 0.2em;
-
+font-family: sans-serif;
 }
+
 
 .close:hover{
  color: black;
@@ -144,6 +175,7 @@ textarea {
   width: 95%;
   padding: 8px;
   margin-block: 10px;
+  
   
 }
 
@@ -174,8 +206,9 @@ textarea {
 
 
 /* Responsiveness */
-@media only screen and (max-width: 600px) {
+@media (min-width: 600px ) {
   .buttons-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
