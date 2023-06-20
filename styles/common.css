@@ -206,10 +206,10 @@ textarea {
 
 
 /* Responsiveness */
-@media (min-width: 600px ) {
+@media only screen and(max-width: 600px ) {
   .buttons-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
   }
@@ -218,5 +218,6 @@ textarea {
   .create-post-btn {
     margin-right: 0;
     margin-bottom: 10px;
+
   }
 }
