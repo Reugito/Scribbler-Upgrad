@@ -11,8 +11,6 @@ const modalClose = document.querySelector('.modal-close');
 // Get the delete button inside the modal
 const deleteButton = document.querySelector('.modal-footer button');
 
-//Get don't delete button inside modal
-const noDeleteButton = document.querySelector('.noButton');
 // Variable to store the currently selected post
 let selectedPost;
 
@@ -36,10 +34,6 @@ modalClose.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-//Add event listener to close the modal if user doesent want to delete post
-noDeleteButton.addEventListener('click', () =>{
-  modal.style.display = 'none';
-})
 
 // Add event listener to delete the post
 deleteButton.addEventListener('click', () => {
@@ -49,8 +43,5 @@ deleteButton.addEventListener('click', () => {
   }
 
 });
-
-
-
 
 });
