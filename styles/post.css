@@ -1,97 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Ysabeau:ital,wght@1,500&display=swap');
 
-  /* Post container styles */
-  .post-container {
-    margin: 50px auto;
-    width: 80%;
-  }
-  
-  /* Post title styles */
-  .post-title {
-    text-align: center;
-  }
-  
-  /* Post author styles */
-  .post-author {
-    float: left;
-    font-weight: bold;
-  }
-  
-  /* Edit button styles */
-  .edit-button {
-    float: right;
-    background-color: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  /* Edit button icon styles */
-  .edit-button i {
-    margin-right: 5px;
-  }
-  
-  /* Post text styles */
-  .post-text {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  /* Like section styles */
-  .like-section {
-    margin-top: 20px;
-  }
-  
-  /* Like button styles */
-  .like-button {
-    background-color: transparent;
-    border: none;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  /* Like button icon styles */
-  .like-button i {
-    margin-right: 5px;
-  }
-  
-  /* Like count styles */
-  .like-count {
-    margin-left: 10px;
-  }
-  
-  /* Comment section styles */
-  .comment-section {
-    margin-top: 20px;
-  }
-  
-  /* Comment input styles */
-  .comment-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  /* Comment button styles */
-  .comment-button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  /* All comments styles */
-  .all-comments {
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  /* Individual comment styles */
-  .comment {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
+#body {
+  background-image: none !important;
+}
+
+/* Post container styles */
+.post-container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+/* Post title styles */
+.post-title {
+  text-align: center;
+  font-family: sans-serif;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+/* Post author styles */
+.post-author {
+  float: left;
+  font-weight: bold;
+  font-family: 'Ysabeau', sans-serif;
+  font-size: 20px;
+}
+
+/* Edit button styles */
+.edit-button {
+  font-family: 'Ysabeau', sans-serif;
+  font-size: large;
+  float: right;
+  background-color: red;
+  box-shadow: 0 4px 10px 0px rgba(255, 0, 0, 0.4);
+  border-radius: 2px;
+  padding: 6px 18px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.edit-button:hover,
+.like-button:hover,
+.comment-button:hover {
+  scale: 1.05;
+}
+
+.edit-button:active,
+.like-button:active,
+.comment-button:active {
+  scale: .90;
+  transition: .1s ease;
+}
+
+
+/* Edit button icon styles */
+.edit-button i {
+  margin-inline: 5px;
+}
+
+/* Post text styles */
+.post-text {
+  background: transparent;
+  font-size: small;
+  text-align: justify;
+  margin-top: 20px;
+  font-family: sans-serif;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+/* Like section styles */
+.like-section {
+  margin-top: 20px;
+}
+
+/* Like button styles */
+.like-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-family: 'Ysabeau', sans-serif;
+  font-size: large;
+  background-color: red;
+  box-shadow: 0 4px 10px 0px rgba(255, 0, 0, 0.4);
+  border-radius: 2px;
+  padding: 4px 16px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Like button icon styles */
+.like-button i {
+  margin-right: 5px;
+}
+
+/* Like count styles */
+.like-count {
+  margin-block: 10px;
+  opacity: .7;
+}
+
+/* Comment section styles */
+.comment-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Comment input styles */
+.comment-input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Comment button styles */
+.comment-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 4px 16px;
+  cursor: pointer;
+  font-family: 'Ysabeau', sans-serif;
+  font-size: large;
+  border-radius: 2px;
+  width: 6em;
+  box-shadow: 0 4px 10px 0px rgba(255, 0, 0, 0.4);
+}
+
+/* All comments styles */
+.all-comments {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-top: 10px;
+  width: 60%;
+}
+
+/* Individual comment styles */
+.comment {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
