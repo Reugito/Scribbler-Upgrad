@@ -123,9 +123,9 @@ header>div:first-child {
   transform: translate(-50%, -50%);
   padding: 1em;
   width: 65em;
-  height: max-content;
   font-family: sans-serif;  
 }
+
 #create-post-modal .green-btn {
   background-color: green;
   color: white;
@@ -138,14 +138,22 @@ header>div:first-child {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  margin-block:10px ;
+  margin-block:10px;
 }
+
 #create-post-modal .modal-content input,
 #create-post-modal .modal-content textarea{
   background: rgba(149, 149, 149, 0.2);
   outline: none;
   border:none;
   width: 98%;
+}
+
+#create-post-modal .modal-content textarea{
+  height: 20em;
+  max-height: 20em;
+  min-height: 2em;
+  resize: vertical;
 }
 
 
