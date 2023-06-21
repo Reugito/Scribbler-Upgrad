@@ -66,3 +66,30 @@ function enableEditMode() {
     }
   }
   
+  document.addEventListener("DOMContentLoaded", function() {
+    // Get the post title, post text, and post author elements
+    const postTitle = document.querySelector('.post-title');
+    const postText = document.querySelector('.post-text');
+    const postAuthor = document.querySelector('.post-author');
+
+    
+  
+    // Retrieve the post details from localStorage
+    const postHeading = localStorage.getItem('postHeading');
+    const postContent = localStorage.getItem('postText');
+    const postUser = localStorage.getItem('postUser');
+
+    const trimmedPostContent = postContent.trim();
+    const formattedPostContent = trimmedPostContent.replace(/\s+/g, ' ');
+  
+    // Set the post details in the corresponding elements
+    postTitle.textContent = postHeading;
+    postText.textContent = formattedPostContent;
+    postAuthor.textContent = postUser;
+  
+    // Clear the localStorage
+    // localStorage.removeItem('postHeading');
+    // localStorage.removeItem('postText');
+    // localStorage.removeItem('postUser');
+  });
+  
