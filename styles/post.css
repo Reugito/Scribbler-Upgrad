@@ -62,13 +62,13 @@
 /* Post text styles */
 .post-text {
   background: transparent;
-  font-size: small;
   text-align: justify;
   margin-top: 20px;
   font-family: sans-serif;
   outline: none;
   border: none;
   width: 100%;
+  min-height: 6em;
 }
 
 /* Like section styles */
