@@ -5,6 +5,9 @@ function enableEditMode() {
     const postTitle = document.querySelector('.post-title');
     const postText = document.querySelector('.post-text');
     const editButton = document.querySelector('.edit-button');
+    
+
+    
   
     if (postTitle.contentEditable === 'false') {
       postTitle.contentEditable = 'true';
@@ -13,6 +16,7 @@ function enableEditMode() {
       postTitle.style.border = '1px solid pink';
       postText.style.border = '1px solid pink';
       editButton.innerHTML = 'Save <i class="fas fa-save"></i>';
+      
     } else {
       postTitle.contentEditable = 'false';
       postText.contentEditable = 'false';
@@ -71,8 +75,7 @@ function enableEditMode() {
     const postTitle = document.querySelector('.post-title');
     const postText = document.querySelector('.post-text');
     const postAuthor = document.querySelector('.post-author');
-
-    
+  
   
     // Retrieve the post details from localStorage
     const postHeading = localStorage.getItem('postHeading');
